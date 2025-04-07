@@ -1,6 +1,8 @@
 import javax.swing.JOptionPane;
 
 public class l2e8 {
+
+   
     public static void main(String[] args) {
         int vetor[] = new int[6];
         int temp = 0;

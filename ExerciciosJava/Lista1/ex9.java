@@ -16,7 +16,7 @@ public class ex9 {
         r = JOptionPane.showConfirmDialog(null, "Você gostaria de cifrar(sim) ou decifrar (não)?");
         if(r == JOptionPane.YES_OPTION){
             for(int i = 0; i < str.length(); i++){
-            deci.charAt(i) = deci.charAt(i) + 3; //NÃO DÁ PARA FAZER ISSO EM JAVA
+            //deci.charAt(i) = deci.charAt(i) + 3; //NÃO DÁ PARA FAZER ISSO EM JAVA
         }
     }
     }

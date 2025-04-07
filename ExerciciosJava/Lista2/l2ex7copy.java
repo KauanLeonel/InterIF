@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class l2ex7 {
+public class l2ex7copy {
     public static void main(String[] args) {
         int vetor1[] = new int[6];
         int vetor2[] = new int[3];
