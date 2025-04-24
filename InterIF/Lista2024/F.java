@@ -23,10 +23,24 @@ public class F {
         for(int i = 0; i < matchesNumber; i++){
             wordSeparation[i] = matches[i].split(" ");
         }
+
+        String[][] times = new String[teams][];
+        int comp = 0;
+        for(int i = 0; i < teams; i++){
+            comp = 0;
+            for(int j = 0; j < teams; j++){
+                if(wordSeparation[i][j].equals(times[i][j])){
+                    comp = 1;
+                }
+            }
+            if (comp == 0){
+                times[i][1] = wordSeparation[i][1];
+            }
+        }
         
         for(int i = 0; i < wordSeparation.length; i ++){
             for(int j = 0; j< wordSeparation[i].length; j++){
-                System.out.println(wordSeparation[i][j]);
+                System.out.println(times[i][j]);
             }
         }
     }
