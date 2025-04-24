@@ -45,7 +45,7 @@ public class D {
             float percentual = sc.nextFloat();
             for (int j = 0; j < lote.length; j++) {
                 comp = 0;
-                for (int k = 0; k < lote[i].length; k++) {
+                for (int k = 0; k < lote[j].length; k++) {
                     if (padrao[k].equals(lote[j][k])) {
                         comp++;
                     }
