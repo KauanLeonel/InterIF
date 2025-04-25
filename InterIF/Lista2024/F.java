@@ -24,24 +24,29 @@ public class F {
             wordSeparation[i] = matches[i].split(" ");
         }
 
-        String[][] times = new String[teams][];
+        //PEGAR O NOME2
+        String[][] times = new String[teams][4];
         int comp = 0;
         for(int i = 0; i < teams; i++){
             comp = 0;
             for(int j = 0; j < teams; j++){
-                if(wordSeparation[i][j].equals(times[i][j])){
+                if(wordSeparation[i][j].equals(times[i][0])&& times[i][0] == null){
                     comp = 1;
                 }
             }
             if (comp == 0){
-                times[i][1] = wordSeparation[i][1];
+                times[i][0] = wordSeparation[i][0];
             }
         }
         
-        for(int i = 0; i < wordSeparation.length; i ++){
+        for(int i = 0; i < matchesNumber; i++){
+            System.out.println(times[i][0]);
+        }
+
+        /*for(int i = 0; i < wordSeparation.length; i ++){
             for(int j = 0; j< wordSeparation[i].length; j++){
                 System.out.println(times[i][j]);
             }
-        }
+        }*/
     }
 }
