@@ -2,6 +2,7 @@ import javax.swing.JOptionPane;
 
 public class B {
 
+   
     public static void main(String[] arg) {
         int a, b, c;
         boolean vali = false;
@@ -23,7 +24,7 @@ public class B {
         } while (vali == false);
 
         String[] participantes = new String[a];
-    String siglas[] = new String[a];
+        String siglas[] = new String[a];
         for (int i = 0; i < participantes.length; i++){
             participantes[i] = JOptionPane.showInputDialog(null, "Insira o nome do participante [" + (i + 1)+ "]: " );
             siglas[i] = participantes[i].substring(0, 3).toUpperCase();
